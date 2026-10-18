@@ -42,9 +42,13 @@ serve as macroeconomic explanatory variables in the stress testing framework.
 ### 1. PD Forecast (SARIMA)
 The SARIMA(2,0,1)(0,0,0,4) model achieved an impressive out-of-sample **MAPE of ~2.03%**, successfully capturing cyclical fluctuations in consumer credit risk.
 
+![SARIMA Forecast](images/forecast.png)
+
 ### 2. Stress Testing & Expected Loss
 A 1pp increase in unemployment was statistically linked to a ~0.15pp increase in delinquency. 
 Under a **Severe scenario** (Unemployment +4pp, GDP -3pp), the Expected Loss increases by approximately **22%** compared to the baseline.
+
+![Stress Test Scenarios](images/stress_test.png)
 
 ### 3. Model Limitations
 While excellent at normal forecasting, the residual diagnostics (Ljung-Box p-value < 0.05) revealed that the SARIMA model struggles to predict extreme structural breaks (e.g., the 2008 crash). This validates the necessity of forward-looking scenario analysis, as required by IFRS 9.
